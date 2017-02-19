@@ -1,12 +1,127 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="mdc-typography">
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="Sistema de evaluación de desempeño docente de la Universidad Metropolitana">
 <meta name="keywords" content="evaluacion docente, evaluacion unimet, docentes unimet, eddunimet">
+
+<!-- Estilos -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="../public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="../public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="../public/css/material-components-web.css" rel="stylesheet">
+<link href="../public/css/material-components-web.min.css" rel="stylesheet">
+
 <title>Evaluación Desempeño Docente Unimet</title>
 </head>
 <body>
-<h1 style="text-align: center">EDDUNIMET</h1>
+<nav>
+    <div class="nav-wrapper">
+      <!--<a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>-->
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/"><i class="material-icons">refresh</i></a></li>
+         <li><a class="waves-effect waves-light botonEnNavbar" href="/login">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">EDDUnimet</h1>
+        <div class="row center">
+          <h5 class="h5desc">Sistema de evaluación de desempeño docente de la Universidad Metropolitana</h5>
+        </div>
+        <div class="row center">
+          <a href="/login" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">¡Inicia sesión!</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="../public/images/panounimet.jpg" alt="Unsplashed background img 1"></div>
+</div>
+<div class="container">
+  <div class="section"><br><br>
+      <!--   Icon Section   -->
+  <h4 style="text-align: center">Para los estudiantes:</h4>
+  <p>EDDUnimet busca facilitar la realización de las encuestas de evaluación docente a todos los estudiantes
+  a través de una plataforma intuitiva de usar, asegurando así la correcta interpretación de resultados y
+  todo esto asegurando el anonimato del estudiante.</p>
+  </div>
+</div><br><br>
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Total gestión por los Jefes de Departamento</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="../public/images/eugmend.jpg" alt="Unsplashed background img 2"></div>
+</div><br><br>
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>Para los docentes:</h4>
+        <p class="left-align light">EDDUnimet será la herramienta de gestión y control sobre los resultados
+        que se pueden obtener de las encuestas realizadas así como una herramienta para la total administra
+        ción de los docentes que estén a cargo de un Jefe de Departamento.</p>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">Reporte de resultados de las encuestas con EDDUnimet</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="../public/images/leyendosaman.JPG" alt="Unsplashed background img 3"></div>
+</div>
+<footer class="page-footer teal">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+       <h5 class="white-text">Universidad Metropolitana</h5>
+        <p class="grey-text text-lighten-4">Proyecto de Sistemas de Información y Bases de Datos</p>
+      </div>
+    <div class="col l3 s12">
+    <h5 class="white-text">Integrantes</h5>
+    <ul>
+      <li><a class="white-text" >Carrione, Willmer</a></li>
+      <li><a class="white-text" >Fontanella, Maurizio</a></li>
+      <li><a class="white-text" >Maldonado, Carlos</a></li>
+    </ul>
+    </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" >Guerrero, Alejandra</a></li>
+            <li><a class="white-text" >Portal, Luis</a></li>
+            <li><a class="white-text" >Torcatt, Héctor</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Cualquier plagio es penado por la ley: <a class="brown-text text-lighten-3" href="http://www.unimet.edu.ve">Universidad Metropolitana</a>
+      </div>
+</div>
+</footer>
+
+<!-- Scripts -->
+<script src="../public/js/jquery.min.js"></script>
+<script src="../public/js/material-components-web.js"></script>
+<script src="../public/js/material-components-web.min.js"></script>
+<script src="../public/js/materialize.js"></script>
+<script src="../public/js/materialize.min.js"></script>
+<script src="../public/js/init.js"></script>
+
+<script>mdc.autoInit()</script>
 </body>
 </html>

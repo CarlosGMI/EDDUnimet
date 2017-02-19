@@ -1,9 +1,10 @@
 'use strict';
 const Hapi = require('hapi');
 const Path = require('path');
-
-// Create a server with a host and port
 const server = new Hapi.Server();
+const Vision = require('vision');
+const Inert = require('inert');
+const servid = [{register: Vision}, {register: Inert}];
 
 server.connection(
 { 
@@ -11,29 +12,53 @@ server.connection(
     port: process.env.PORT || 3000 
 });
 
-server.register(require('vision'), function(err)
+server.register(servid, function(err)
 {
     if(err)
     {
         throw err;
     }
-// Add the route
+    
     server.route(
     {
-        method: 'GET',
-        path:'/', 
-        handler: function (request, reply) 
-        {
-            return reply.view('principal');
-        }
-    });
+		method: 'GET', 
+		path: '/public/{path*}', 
+		handler: 
+		{
+			directory :
+			{
+				path: './public',
+				listing : false,
+				index : false
+			}
+		}
+	});
     
     server.views(
     {
         engines:{html: require('handlebars')},
         relativeTo: __dirname,
         path: 'vistas'
-    });  
+    });
+
+    server.route(
+    {
+        method: 'GET',
+        path:'/', 
+        handler: function (request, reply) 
+        {
+            return reply.view('principal'); //El reply.view puede recibir otro parámetro que puede ser una variable que necesitamos pasar a la vista
+        }
+    });
+    server.route(
+    {
+        method: 'GET',
+        path: '/login',
+        handler: function (request, reply)
+        {
+            return reply.view('login');
+        }
+    });
 });
     
 // Start the server
