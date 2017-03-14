@@ -15,4 +15,7 @@ Maldonado, Carlos.
 
 Guerrero, Alejandra.
 Portal, Luis.
-Torcatt, Héctor.r name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+Torcatt, Héctor.
+
+npm start para iniciar
+mysql-ctl cli para entrar al terminal de MySQL

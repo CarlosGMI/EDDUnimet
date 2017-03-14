@@ -1,1 +1,74 @@
-<h1>Este será el login</h1>
+<!DOCTYPE html>
+<html lang="es" class="mdc-typography">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Sistema de evaluación de desempeño docente de la Universidad Metropolitana">
+<meta name="keywords" content="evaluacion docente, evaluacion unimet, docentes unimet, eddunimet">
+
+<!-- Estilos -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="../public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="../public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="../public/css/material-components-web.css" rel="stylesheet">
+<link href="../public/css/material-components-web.min.css" rel="stylesheet">
+<link href="../public/css/sweetalert.css" rel="stylesheet">
+<title>Evaluación Desempeño Docente Unimet</title>
+</head>
+<body class="teal loaded">
+<div id="login-page" class="row">
+    <div class="col s4 z-depth-4 card-panel">
+        <form class="login-form" method="POST" action="/iniciando">
+            <div class="row">
+                <div class="input-field col s12 center">
+                    <img src="../public/images/Logounimet150.png">
+                    <p class="center login-form-text">Gestiona las evaluaciones al docente con EDDUnimet</p>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12 center">
+                    <i class="material-icons">perm_identity</i>
+                </div>
+                <div class="input-field col s11">
+                    <input class="validate" id="correoElectronico" type="email" name="emailUsuario">
+                    <label class="center-align">Correo electrónico</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12 center">
+                    <i class="material-icons">lock_outline</i>
+                </div>
+                <div class="input-field col s11">
+                    <input class="validate" id="contrasena" type="password" name="passwordUsuario">
+                    <label class="center-align">Contraseña</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12 m12 l12 yo1 login-text">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Recordarme</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12 center">
+                    <input value="Inicia sesión" class="btn-large waves-effect waves-light teal lighten-1 col s12" id="botonLogin" type="submit" onClick="return empty()">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="../public/js/jquery.min.js"></script>
+<script src="../public/js/material-components-web.js"></script>
+<script src="../public/js/material-components-web.min.js"></script>
+<script src="../public/js/materialize.js"></script>
+<script src="../public/js/materialize.min.js"></script>
+<script src="../public/js/init.js"></script>
+<script src="../public/js/sweetalert-dev.js"></script>
+<!--<script src="../public/js/require.js"></script>-->
+<script src="../public/js/login.js"></script>
+
+<script>mdc.autoInit()</script>
+</body>
+</html>

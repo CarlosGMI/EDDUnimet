@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es" class="mdc-typography">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Sistema de evaluación de desempeño docente de la Universidad Metropolitana">
+<meta name="keywords" content="evaluacion docente, evaluacion unimet, docentes unimet, eddunimet">
+
+<!-- Estilos -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="../public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="../public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="../public/css/material-components-web.css" rel="stylesheet">
+<link href="../public/css/material-components-web.min.css" rel="stylesheet">
+<title>Evaluación Desempeño Docente Unimet</title>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+      <!--<a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>-->
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/"><i class="material-icons">refresh</i></a></li>
+         <li><a class="waves-effect waves-light botonEnNavbar" href="/login">Desconectarse</a></li>
+         <li><a class="waves-effect waves-light botonEnNavbar" href="/login">Cargar Datos</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Evaluacion</h1>
+        <div class="row center">
+          <h5 class="h5desc">Nombre del departamente</h5>
+          <h5 class="h5desc">Nombre de la seccion</h5>
+        </div>
+        
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="../public/images/autoridad.jpg" alt="Unsplashed background img 1"></div>
+    
+</div>
+
+<div>
+  
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <p class="black-text text-lighten-4">La evaluación varia de en un rango del 1 al 5, donde 5 significa que la presencia del factor es ALTAMENTE SATISFACTORIA y 1 que la presencia del factor es INSATISFACTORIA.</p>
+      <div class="collapsible-header">Datos del Docente</div>
+      <div class="collapsible-body"><span>
+        
+        
+        
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">El Profesor</div>
+      <div class="collapsible-body"><span>
+        
+        <table class="striped centered">
+          
+        <thead>
+          <tr>
+              <th data-field="id">Identificación Institucional:</th>
+              <th data-field="id">Evalua del 1 al 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>Practica y promueve la honestidad, el respeto, la excelencia y la responsabilidad.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test1" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Conoce, da a conocer y respeta las normas y reglamentos.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test2" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Respeta los compromisos y las normas establecidas en los grupos o equipos de trabajo.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test3" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Participa en Comisiones o Asociaciones, institucionales o de la dependencia.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test4" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Cuida su ambiente de trabajo.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test5" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Cuida su aspecto personal.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test6" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Acepta el proceso de evaluación como un medio para identificar las oportunidades de mejora.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test7" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Representa a la Universidad con sentido de pertenencia.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test8" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Internaliza con sentido de pertenencia políticas y objetivos de la institución.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test9" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Muestra disposición para entender y satisfacer necesidades de la dependencia.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test10" min="1" max="5" /></p></form></td>
+          </tr>
+        </tbody>
+        
+        
+        
+        
+         <thead>
+          <tr>
+              <th data-field="id">Manejo de Situaciones:</th>
+              <th data-field="id">Evalua del 1 al 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>Toma decisiones oportunas.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test11" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Se maneja con ecuanimidad, prudencia, cortesía y discreción en situaciones de conflicto.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test12" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Demuestra habilidad para expresarse en forma oral y escrita.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test13" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Demuestra capacidad para verificar la congruencia entre lo que se dice y lo que se hace.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test14" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Es oportuno en sus intervenciones.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test15" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Manifiesta y demuestra capacidad de negociación.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test16" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Se comunica de manera cortés y respetuosa con secretarias, colegas, supervisados y alumnos.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test17" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Es discreto en la solución de conflictos.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test18" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>En situaciones de conflicto respeta los canales de autoridad.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test19" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+        </tbody>
+        
+        
+       
+       
+        <thead>
+          <tr>
+              <th data-field="id">Participación y Trabajo en Equipo:</th>
+              <th data-field="id">Evalua del 1 al 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>Asiste a las reuniones de equipo y está dispuesto a ofrecer conocimiento, información y experticia para el logro de objetivos comunes.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test20" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Comparte con colegas sus experiencias docentes.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test21" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Aporta conocimientos valiosos sobre la materia que dicta, a través de la coordinación de la misma.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test22" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Es eficiente en la planificación de tareas o actividades relacionadas con su equipo de trabajo.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test23" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Es colaborador, conciliador y sabe escuchar.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test24" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Evidencia interés por lograr acuerdos y consensos con el grupo.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test25" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Participa como jurado en trabajos y/o tesis de grado.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test26" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Muestra disposición a actuar como tutor en trabajos y/o tesis de grado.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test27" min="1" max="5" /></p></form></td>
+        </tbody>
+        
+        
+        
+        
+        
+        
+        <thead>
+          <tr>
+              <th data-field="id">Capacidad para actuar como facilitador en el proceso de enseñanza-aprendizaje:</th>
+              <th data-field="id">Evalua del 1 al 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>Conoce la materia a profundidad.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test28" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Analiza con el grupo de estudiantes, al inicio del curso, el programa de la materia, haciendo énfasis en los objetivos, contenidos, actividades y formas de evaluación del mismo.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test29" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Expone los conceptos con claridad y precisión y promueve que comprendan el por qué de las cosas.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test30" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Promueve el pensamiento crítico y utiliza técnicas que favorecen el debate, la discusión y las propuestas de solución.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test31" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Encarga trabajos que desarrollan la capacidad de identificar y solucionar problemas.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test32" min="1" max="5" /></p></form></td>
+          </tr>
+        </tbody>
+        
+        
+        
+        
+        
+        
+        
+        <thead>
+          <tr>
+              <th data-field="id">Actualización y Capacitación:</th>
+              <th data-field="id">Evalua del 1 al 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>Se mantiene activo en el área de su competencia a nivel teórico y práctico, suministrando información vigente a sus alumnos.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test33" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Intercambia, expone o exhibe ideas novedosas sobre su materia.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test34" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Participa en programas de actualización de la Unimet.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test35" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Participa en programas de investigación de la Unimet.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test36" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Participa en otros programas de actualización profesional, acordes con las metas de la dependencia o de la Universidad.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test37" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Organiza y dicta algún seminario o taller dentro de su dependencia o a nivel institucional.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test38" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Diseña algún curso o parte de uno, integrando actividades de aprendizaje que requieren el uso de la tecnología.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test39" min="1" max="5" /></p></form></td>
+          </tr>
+        </tbody>
+        
+        
+        
+        
+        
+        
+        <thead>
+          <tr>
+              <th data-field="id">Autocrítica:</th>
+              <th data-field="id">Evalua del 1 al 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>Muestra apertura al diálogo y a formas de pensar diferentes a la suya.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test40" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Es exigente consigo mismo.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test41" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Demuestra aceptar observaciones externas, buscando siempre optimizar su rol.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test42" min="1" max="5" /></p></form></td>
+          </tr>
+        </tbody>
+        
+        
+        
+        
+        
+        
+        <thead>
+          <tr>
+              <th data-field="id">Motivación al Logro:</th>
+              <th data-field="id">Evalua del 1 al 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>Muestra interés y satisfacción en su trabajo.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test43" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Promueve actividades innovadoras y de cambio para la dependencia, buscando siempre las oportunidades de mejora.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test44" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Es exigente en el logro de sus objetivos.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test45" min="1" max="5" /></p></form></td>
+          </tr>
+        </tbody>
+        
+        
+        
+        
+        
+        
+        <thead>
+          <tr>
+              <th data-field="id">Responsabilidad y Compromiso:</th>
+              <th data-field="id">Evalua del 1 al 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>Asiste a todas sus sesiones, cumple con el tiempo reglamentario de clase.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test46" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Evidencia compromiso con estudiantes y colegas.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test47" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Evidencia compromiso con la administración del curso cumpliendo con el programa establecido para la materia.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test48" min="1" max="5" /></p></form></td>
+          </tr>
+           <tr>
+           <td>Entrega puntualmente las actas, informes, encuestas, y recaudos solicitados por sus superiores o coordinadores.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test49" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Es puntual en todas las actividades de clase, reuniones, etc.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test50" min="1" max="5" /></p></form></td>
+          </tr>
+          <tr>
+           <td>Está disponible en el período intersemestral.</td>
+            <td><form action="#"> <p class="range-field"><input type="range" id="test51" min="1" max="5" /></p></form></td>
+          </tr>
+        </tbody>
+        
+        
+        
+      </table>
+        
+      </span></div>
+    </li>
+    
+  </ul>
+  
+</div>
+
+<footer class="page-footer teal">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+       <h5 class="white-text">Universidad Metropolitana</h5>
+        <p class="grey-text text-lighten-4">Proyecto de Sistemas de Información y Bases de Datos</p>
+      </div>
+    <div class="col l3 s12">
+    <h5 class="white-text">Integrantes</h5>
+    <ul>
+      <li><a class="white-text" >Carrione, Willmer</a></li>
+      <li><a class="white-text" >Fontanella, Maurizio</a></li>
+      <li><a class="white-text" >Maldonado, Carlos</a></li>
+    </ul>
+    </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" >Guerrero, Alejandra</a></li>
+            <li><a class="white-text" >Portal, Luis</a></li>
+            <li><a class="white-text" >Torcatt, Héctor</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Cualquier intento de plagio es penado por la ley: <a class="brown-text text-lighten-3" href="http://www.unimet.edu.ve">Universidad Metropolitana</a>
+      </div>
+</div>
+</footer>
+
+<!-- Scripts -->
+<script src="../public/js/jquery.min.js"></script>
+<script src="../public/js/material-components-web.js"></script>
+<script src="../public/js/material-components-web.min.js"></script>
+<script src="../public/js/materialize.js"></script>
+<script src="../public/js/materialize.min.js"></script>
+<script src="../public/js/init.js"></script>
+
+<script>mdc.autoInit()</script>
+</body>
+</html>
