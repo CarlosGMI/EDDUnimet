@@ -14,7 +14,17 @@ jq(document).ready(function()
         }
         else
         {
-            console.log("Los inputs están llenos");
+            var comprobacion = correo.substring(correo.indexOf("@") + 1);
+            console.log(comprobacion);
+            if(comprobacion == "correo.unimet.edu.ve" || comprobacion == "unimet.edu.ve")
+            {
+                console.log("Los inputs están llenos");
+            }
+            else
+            {
+                sweetAlert("Error!", "Por favor, use un correo autorizado por la UNIMET", "error");
+                return false;
+            }
             //exports = [{email: correo}, {password: contrasena}];
         }
     });

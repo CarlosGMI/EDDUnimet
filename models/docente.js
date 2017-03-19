@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Docente = sequelize.define('Docente', {
-    id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    IDDocente: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     nombre: DataTypes.STRING,
     apellido: DataTypes.STRING,
     email: DataTypes.STRING,
@@ -11,8 +11,10 @@ module.exports = function(sequelize, DataTypes) {
     freezeTableName: true,
     timestamps: false,
     classMethods: {
-      associate: function(models) {
-        // associations can be defined here
+      associate: function(models)
+      {
+        Docente.hasMany(models.Seccion,{foreignKey: 'IDDocente'}); //Un docente imparte clases en muchas secciones
+        Docente.belongsToMany(models.Departamento,{through: 'Docente_Departamento',foreignKey: 'IDDocente'}); //Un docente pertenece a N departamentos
       }
     }
   });
