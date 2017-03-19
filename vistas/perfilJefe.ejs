@@ -31,68 +31,52 @@
         <br><br>
         <h1 class="header center teal-text text-lighten-2">Jefe de Departamento</h1>
         <div class="row center">
-          <h5 class="h5desc">Departamento de Matemática</h5>
+          <h5 class="h5desc">Departamento de <%= jefdep[0].nombreDep %> </h5>
         </div>
         
         <br><br>
       </div>
     </div>
     <div class="parallax"><img src="../public/images/autoridad.jpg" alt="Unsplashed background img 1"></div>
-    
 </div>
-
+<p style="text-align:center"><b>Nombre:</b> <%= jefdep[0].nombreDoc %> </p>
+<p style="text-align:center"><b>Apellido:</b> <%= jefdep[0].apellido %> </p><hr/><br>
+<h5 style="text-align:center">Docentes del Departamento de <%= jefdep[0].nombreDep %>:</h5><br><br>
  <div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s3"><a href="#test1">Profesores</a></li>
-       
-        
+    <!--<div class="col s12">
+      <ul class="tabs centered">
+        <li class="tab col s11"><a href="#test1">Docentes del Departamento de %%%:</a></li>
       </ul>
-    </div>
+    </div>-->
     <div id="test1" class="col s12"> 
     <table class="striped centered">
         <thead>
           <tr>
-              <th data-field="id">Nombre</th>
-              <th data-field="name">Apellido</th>
-              <th data-field="price">Carnet</th>
-              <th data-field="price">Materia</th>
-              <th data-field="price">Secciones</th>
+              <th data-field="id">Materia</th>
+              <th data-field="price">Sección</th>
+              <th data-field="name">Nombre Docente</th>
+              <th data-field="price">Apellido Docente</th>
               <th data-field="price">Correo</th>
               <th data-field="price">Autorizar</th>
               <th data-field="price">Evaluar</th>
               <th data-field="price">Resultados</th>
           </tr>
         </thead>
-
         <tbody>
-          <tr>
-            <td>Julio</td>
-            <td>Daza</td>
-            <td>203142585</td>
-            <td>Matemáticas I</td>
-            <td>1, 4</td>
-            <td>jdaza@unimet.edu.ve</td>
-            <td><a class="btn">Autorizar</a></td>
-            <td><a class="btn">Evaluar</a></td>
-            <td><a class="btn">Ver resultados</a></td>
-          </tr>
-          <tr>
-            <td>Aida</td>
-            <td>Montezuma</td>
-            <td>203141212</td>
-            <td>Matemáticas IV</td>
-            <td>1</td>
-            <td>amontezuma@unimet.edu.ve</td>
-            <td><a class="btn">Autorizar</a></td>
-            <td><a class="btn">Evaluar</a></td>
-            <td><a class="btn">Ver resultados</a></td>
-          </tr>
+          <% doc.forEach(function(materias) { %>
+            <tr>
+              <td><%= materias.nombreM %></td>
+              <td><%= materias.numero %></td>
+              <td><%= materias.nombreDoc %></td>
+              <td><%= materias.apellido %></td>
+              <td><%= materias.email %></td>
+              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalEstudiante">Autorizar</a></td>
+              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalEstudiante">Evaluar</a></td>
+              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalEstudiante">Ver resultados</a></td>
+            </tr>
+          <% }); %>
         </tbody>
       </table></div>
-    
-
-    
   </div>
 
 <footer class="page-footer teal">

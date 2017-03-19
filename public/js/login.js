@@ -29,4 +29,9 @@ jq(document).ready(function()
         }
     });
 });
+
+function exito()
+{
+    sweetAlert("Error!", "Por favor, use un correo autorizado por la UNIMET", "error");
+}
 //document.getElementById('botonLogin').onclick = function()

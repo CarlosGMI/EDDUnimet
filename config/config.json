@@ -3,7 +3,7 @@
     "username": "carlosgmi",
     "password": "",
     "database": "EDDUnimet",
-    "host": "127.0.0.1", 
+    "host": "127.0.0.1",
     "connection id": "5",
     "dialect": "mysql"
   },
