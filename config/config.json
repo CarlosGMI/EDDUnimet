@@ -4,6 +4,7 @@
     "password": "",
     "database": "EDDUnimet",
     "host": "127.0.0.1",
+    "port": "3306",
     "connection id": "5",
     "dialect": "mysql"
   },

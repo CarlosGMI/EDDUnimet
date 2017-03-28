@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" class="mdc-typography">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Sistema de evaluación de desempeño docente de la Universidad Metropolitana">
+<meta name="keywords" content="evaluacion docente, evaluacion unimet, docentes unimet, eddunimet">
+
+<!-- Estilos -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="../public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="../public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="../public/css/material-components-web.css" rel="stylesheet">
+<link href="../public/css/material-components-web.min.css" rel="stylesheet">
+<link href="../public/css/sweetalert.css" rel="stylesheet">
+<title>Evaluación Desempeño Docente Unimet</title>
+</head>
+<body class="teal loaded">
+
+
+<!-- Scripts -->
+<script src="../public/js/jquery.min.js"></script>
+<script src="../public/js/material-components-web.js"></script>
+<script src="../public/js/material-components-web.min.js"></script>
+<script src="../public/js/materialize.js"></script>
+<script src="../public/js/materialize.min.js"></script>
+<script src="../public/js/init.js"></script>
+<script src="../public/js/sweetalert-dev.js"></script>
+<!--<script src="../public/js/require.js"></script>-->
+
+<script>mdc.autoInit()</script>
+
+<script>
+    $(document).ready(function()
+    {
+        //swal("Correcto!", "Tu evaluación se ha registrado correctamente!", "success");
+        swal(
+        {
+          title: "Correcto!",
+          text: "Tu evaluación se ha registrado correctamente!",
+          type: "success",
+          showCancelButton: false,
+          confirmButtonColor: "#DD6B55",
+          confirmButtonText: "Continuar",
+          closeOnConfirm: false
+        },function()
+        {
+          window.location.href = '/transicionB';
+        });
+    });
+</script>
+
+</body>
+</html>

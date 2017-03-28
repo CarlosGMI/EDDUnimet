@@ -13,6 +13,7 @@ module.exports = function(sequelize, DataTypes) {
       associate: function(models) 
       {
            Seccion.belongsToMany(models.Estudiante,{through: 'Estudiante_Seccion',foreignKey: 'IDSeccion'}); //Un estudiante ve clases en N secciones
+           //Seccion.hasMany(models.ModeloB,{foreignKey: 'IDSeccion', onDelete: "CASCADE", onUpdate: "CASCADE"}); //Una sección tiene N evaluaciones B
       }
     }
   });

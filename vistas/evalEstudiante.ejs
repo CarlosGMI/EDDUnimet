@@ -11,6 +11,7 @@
 <link href="../public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <link href="../public/css/material-components-web.css" rel="stylesheet">
 <link href="../public/css/material-components-web.min.css" rel="stylesheet">
+<link href="../public/css/sweetalert.css" rel="stylesheet">
 <title>Evaluación Desempeño Docente Unimet</title>
 </head>
 <body>
@@ -20,7 +21,6 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="/"><i class="material-icons">refresh</i></a></li>
          <li><a class="waves-effect waves-light botonEnNavbar" href="/login">Desconectarse</a></li>
-         <li><a class="waves-effect waves-light botonEnNavbar" href="/login">Cargar Datos</a></li>
         
       </ul>
     </div>
@@ -29,16 +29,12 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Evaluacion</h1>
-        <div class="row center">
-          <h5 class="h5desc">Nombre del departamente</h5>
-          <h5 class="h5desc">Nombre de la seccion</h5>
-        </div>
+        <h1 class="header center teal-text text-lighten-2">Evaluación al docente</h1>
         
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="../public/images/autoridad.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="../public/images/evaluacionB.jpg" alt="Unsplashed background img 1"></div>
     
 </div>
 
@@ -47,17 +43,11 @@
   <ul class="collapsible" data-collapsible="accordion">
     <li>
       <p class="black-text text-lighten-4" style="text-align:center">La evaluación varía en un rango del 1 al 4, donde el 1 es "total desacuerdo" y 4 "total acuerdo". </p>
-      <div class="collapsible-header">Datos del Profesor</div>
-      <div class="collapsible-body"><span>
-        
-        
-        
-      </span></div>
+      <h5 style="text-align:center">Evaluando a: </h5><p style="text-align:center"><%= doc[0].nombre %> <%= doc[0].apellido %></p>
     </li>
     <li>
-      <div class="collapsible-header">El Profesor</div>
+      <div class="collapsible-header">Evaluación</div>
       <div class="collapsible-body"><span>
-        
         <table class="striped centered">
         <thead>
           <tr>
@@ -71,99 +61,98 @@
           <tr>
             <td>1</td>
             <td>Comunica los temas de manera comprensibles </td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test1" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test1" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>2</td>
             <td>Explica en detalle los objetivos de la materia.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test2" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test2" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>3</td>
             <td>Enriquece las exposiciones con ejemplos de interés.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test3" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test3" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>4</td>
             <td>Relaciona sistemáticamente los contenidos con los objetivos de las asignaturas.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test4" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test4" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>5</td>
             <td>Ofrece materiales que propician el aprendizaje.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test5" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test5" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>6</td>
             <td>Aclara las dudas que se presentan a lo largo del curso.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test6" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test6" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>7</td>
             <td>Establece y comunica previamente los planes de evaluación.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test7" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" class="inputEvaluacionB" type="range" id="test7" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>8</td>
             <td>Brinda oportunamente retroalimentación sobre los resultados de las evaluaciones.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test8" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test8" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>9</td>
             <td>Conduce la interacción grupal y estimula la argumentación en los integrantes del grupo.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test9" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test9" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>10</td>
             <td>Incentiva la búsqueda de información complementaria para el curso.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test10" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test10" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>11</td>
             <td>Mantiene en esta asignatura un balance entre diferentes actividades: discusiones teóricas, sesiones de particas, aplicaciones diversas y relacionas con la asignaturas.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test11" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test11" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>12</td>
             <td>Propicia la responsabilidad y la modela con su conducta.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test12" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test12" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>13</td>
             <td>En general la calidad del profesor es: </td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test13" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test13" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>14</td>
             <td>Su disposición a tomar otro curso con este profesor es:</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test14" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test14" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>15</td>
             <td>Su aprovechamiento de esta materia como estudiante está siendo:</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test15" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test15" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>16</td>
             <td>Su dedicación y esfuerzo como estudiante en este curso está siendo:</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test16" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test16" min="0" max="4" /></p></form></td>
           </tr>
           <tr>
             <td>17</td>
             <td>El texto y la bibliografía sugerida  son adecuadas. Útil.</td>
-            <td><form action="#"> <p class="range-field"><input type="range" id="test17" min="1" max="4" /></p></form></td>
+            <td><form action="#"> <p class="range-field"><input value="0" type="range" class="inputEvaluacionB" id="test17" min="0" max="4" /></p></form></td>
           </tr>
-         
         </tbody>
       </table>
         
       </span></div>
     </li>
-    
   </ul>
   
-</div>
-
+</div><br>
+<input value="Enviar evaluación" class="btn waves-effect waves-light teal lighten-1" style="margin-left: 2cm" href="" id="botonEvaluacionB" type="submit" onClick="validarScroll()"></input><br><br>
+<input type="hidden" id="seccionEscondida" name="country" value="<%= sec %>">
 <footer class="page-footer teal">
   <div class="container">
     <div class="row">
@@ -203,6 +192,8 @@
 <script src="../public/js/materialize.js"></script>
 <script src="../public/js/materialize.min.js"></script>
 <script src="../public/js/init.js"></script>
+<script src="../public/js/sweetalert-dev.js"></script>
+<script src="../public/js/evaluacionb.js"></script>
 
 <script>mdc.autoInit()</script>
 </body>

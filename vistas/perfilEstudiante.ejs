@@ -62,7 +62,7 @@
               <td><%= materias.numero %></td>
               <td><%= doc[i].nombre %></td>
               <td><%= doc[i].apellido %></td>
-              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalEstudiante">Evaluar</a></td>
+              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalEstudiante/?id=<%= est[0].IDEstudiante %>&sec=<%= materias.IDSeccion %>">Evaluar</a></td>
             </tr>
           <% }); %>  
         </tbody>

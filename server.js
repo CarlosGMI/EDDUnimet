@@ -7,7 +7,7 @@ const Vision = require('vision');
 const Inert = require('inert');
 const basicAuth = require('hapi-auth-cookie');
 const loginController = require('./lib/login');
-//console.log("shit"+loginController[0].config.handler);
+const modeloBController = require('./lib/evaluacionb');
 const models = require('./models');
 const Sequelize = require('sequelize');
 const sequelize = new Sequelize('EDDUnimet','carlosgmi','', //'c9'
@@ -33,7 +33,7 @@ server.register(Vision, function (err)
     {
         engines: 
         {
-            ejs: require('ejs')
+            ejs: require('ejs'),
         },
         path: __dirname+'/vistas'
     });
@@ -81,6 +81,7 @@ server.auth.strategy('inicio', 'cookie', false,
 
 server.route(rutas);
 server.route(loginController);
+server.route(modeloBController);
 
 models.sequelize.sync().then(function()
 {

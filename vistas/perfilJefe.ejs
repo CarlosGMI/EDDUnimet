@@ -70,9 +70,9 @@
               <td><%= materias.nombreDoc %></td>
               <td><%= materias.apellido %></td>
               <td><%= materias.email %></td>
-              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalEstudiante">Autorizar</a></td>
-              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalEstudiante">Evaluar</a></td>
-              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalEstudiante">Ver resultados</a></td>
+              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalDocente">Autorizar</a></td>
+              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalDocente/?id=<%=materias.id%>">Evaluar</a></td>
+              <td><a class="btn waves-effect waves-light teal lighten-1" href="/evalDocente">Ver resultados</a></td>
             </tr>
           <% }); %>
         </tbody>
