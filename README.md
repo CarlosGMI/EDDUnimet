@@ -5,7 +5,7 @@ Proyecto de Sistemas de Información.
 
 **=======================================**
 
-Aplicación encargada de gestionar mudanzas en línea así como empleos para esta empresa.  
+Aplicación encargada de gestionar el sistema de Evaluación Docente en la Universidad Metropolitana, tanto por parte del estudiante como del Jefe de los Departamentos de la UNIMET.  
 Realizada con NodeJS, HapiJS, MySQL, Sequelize, Materialize, renderizado .ejs y entorno de desarrollo Cloud9. 
 
 **=======================================**  
